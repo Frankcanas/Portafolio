@@ -34,7 +34,7 @@ export const personalInfo = {
   location: "Colombia",
   github: "https://github.com/Frankcanas",
   linkedin: "https://www.linkedin.com/in/frank-luis-cañas-bolaño-3a0527229",
-  email: "frankcanas@ejemplo.com",
+  email: "frankluissena@gmail.com",
   whatsapp: "https://wa.me/",
   stats: [
     { label: "Especialidad Core", value: "Backend Nest & Node" },
