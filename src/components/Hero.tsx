@@ -28,16 +28,16 @@ export const Hero = () => {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.15]">
-            Hola, soy <span className="text-gradient">{personalInfo.name}</span>
+            Hola, soy <span className="text-gradient">{personalInfo.shortName}</span>
             <br />
             <span className="text-slate-200 text-3xl sm:text-5xl lg:text-6xl font-bold">
-              Frontend Lead & Full Stack
+              Backend Developer
             </span>
           </h1>
 
           {/* Description */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed font-normal">
-            Especialista en desarrollo frontend con <span className="text-slate-200 font-medium">React, TypeScript y Leaflet</span>, conectado con arquitecturas limpias en <span className="text-slate-200 font-medium">NestJS</span> e integraciones avanzadas de <span className="text-cyan-400 font-medium">Inteligencia Artificial y RAG Local</span>.
+            Especialista en arquitecturas backend escalables con <span className="text-slate-200 font-medium">NestJS, Node.js, Express y TypeScript</span>, bases de datos relacionales con <span className="text-slate-200 font-medium">PostgreSQL, TypeORM y Sequelize</span>, y soluciones en la nube con <span className="text-cyan-400 font-medium">AWS y RAG Local</span>.
           </p>
 
           {/* Action Buttons */}
@@ -46,7 +46,7 @@ export const Hero = () => {
               href="#proyectos"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-teal-400 hover:from-cyan-300 hover:to-teal-300 shadow-lg shadow-cyan-500/25 transition-all hover:scale-105 active:scale-95"
             >
-              <span>Ver Proyectos Destacados</span>
+              <span>Ver APIs & Proyectos</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
@@ -87,11 +87,11 @@ export const Hero = () => {
                 key={idx}
                 className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm text-left hover:border-slate-700/80 transition-colors"
               >
-                <div className="text-xl sm:text-2xl font-bold text-white mb-1 flex items-center gap-1.5">
-                  <span className="text-cyan-400">#</span>
+                <div className="text-base sm:text-lg font-bold text-white mb-1 flex items-center gap-1.5">
+                  <span className="text-cyan-400">▹</span>
                   {stat.value}
                 </div>
-                <div className="text-xs sm:text-sm text-slate-400 font-medium">
+                <div className="text-xs text-slate-400 font-medium">
                   {stat.label}
                 </div>
               </div>

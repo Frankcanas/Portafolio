@@ -1,30 +1,30 @@
-import { Map, Layers, Cpu, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Server, Database, Cloud, Cpu, CheckCircle2 } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export const About = () => {
   const highlights = [
     {
-      icon: Map,
-      title: 'GIS & Mapas Interactivos',
-      desc: 'Dominio de Leaflet y capas interactivas para rutas comerciales, asegurando gestión limpia de memoria y ciclo de vida.',
+      icon: Server,
+      title: 'APIs Robustas en NestJS & Node.js',
+      desc: 'Desarrollo de servicios con tipado estricto en TypeScript, validaciones con DTOs, autenticación JWT y documentación interactiva con Swagger.',
       color: 'from-cyan-500 to-blue-500',
     },
     {
-      icon: Layers,
-      title: 'Clean Architecture & DDD',
-      desc: 'Desacoplamiento estricto de UI y estado mediante Custom Hooks en frontend y arquitectura modular en backend.',
+      icon: Database,
+      title: 'PostgreSQL & ORMs (TypeORM / Sequelize)',
+      desc: 'Diseño relacional optimizado, integridad referencial, transacciones complejas, migraciones estructuradas y control de consultas.',
       color: 'from-indigo-500 to-purple-500',
+    },
+    {
+      icon: Cloud,
+      title: 'Cloud & Contenedores (AWS & Docker)',
+      desc: 'Entornos consistentes con Docker Compose para bases de datos y microservicios, despliegue en AWS y pipelines de CI/CD.',
+      color: 'from-emerald-500 to-teal-500',
     },
     {
       icon: Cpu,
       title: 'IA Aplicada & RAG Local',
-      desc: 'Desarrollo de asistentes inteligentes con Ollama y embeddings locales que garantizan 100% de privacidad y cero costos en tokens.',
-      color: 'from-emerald-500 to-teal-500',
-    },
-    {
-      icon: ShieldCheck,
-      title: 'Calidad & Anti-Vibecoding',
-      desc: 'Compromiso con pruebas, linting estricto, TypeScript sin tipos laxos y pipelines de CI/CD automatizados.',
+      desc: 'Servicios de inferencia semántica con Ollama y Gemma sin fugas de datos, combinados con automatizaciones con Google Gemini SDK.',
       color: 'from-amber-500 to-orange-500',
     },
   ];
@@ -39,10 +39,10 @@ export const About = () => {
             Perfil Profesional
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Sobre Mí & Filosofía de Desarrollo
+            Especialización Backend & Arquitectura de Software
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Combinando ingeniería de software rigurosa, sensibilidad de diseño UI/UX e innovación en Inteligencia Artificial.
+            Construyendo la lógica de negocio, seguridad y persistencia que sostienen aplicaciones de producción.
           </p>
         </div>
 
@@ -57,22 +57,22 @@ export const About = () => {
               </p>
             ))}
 
-            <div className="pt-2 flex flex-wrap gap-3">
+            <div className="pt-2 flex flex-wrap gap-2.5">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>React 19 & Next.js</span>
+                <span>NestJS & Express</span>
               </div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>TypeScript Estricto</span>
+                <span>PostgreSQL, TypeORM & Sequelize</span>
               </div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>NestJS & Clean Architecture</span>
+                <span>AWS & Docker</span>
               </div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>RAG Local & Ollama</span>
+                <span>React & Vite (Básico)</span>
               </div>
             </div>
           </div>

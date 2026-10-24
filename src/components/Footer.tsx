@@ -1,4 +1,5 @@
-import { ArrowUp, Code2 } from 'lucide-react';
+import { ArrowUp, Server } from 'lucide-react';
+import { personalInfo } from '../data/portfolioData';
 
 export const Footer = () => {
   const scrollToTop = () => {
@@ -13,21 +14,21 @@ export const Footer = () => {
           {/* Brand & info */}
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white">
-              <Code2 className="w-4 h-4" />
+              <Server className="w-4 h-4" />
             </div>
             <div>
               <p className="font-bold text-white text-sm">
-                Frank Cañas
+                {personalInfo.shortName}
               </p>
               <p className="text-slate-500 text-xs">
-                Frontend Lead & Full Stack Developer
+                {personalInfo.role}
               </p>
             </div>
           </div>
 
           {/* Center text */}
           <div className="flex items-center gap-1.5 text-slate-400 text-xs text-center">
-            <span>Construido con React 19, TypeScript & Tailwind CSS</span>
+            <span>Desarrollado con NestJS & Node en mente | Portafolio en React 19 + TypeScript</span>
           </div>
 
           {/* Back to top */}

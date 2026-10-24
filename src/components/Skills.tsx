@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Layout, Server, Sparkles, Terminal, Check } from 'lucide-react';
+import { Server, Database, Cloud, Sparkles, Check } from 'lucide-react';
 import { skillsCategories } from '../data/portfolioData';
 
 const iconMap: Record<string, React.ElementType> = {
-  Layout,
   Server,
+  Database,
+  Cloud,
   Sparkles,
-  Terminal,
 };
 
 export const Skills = () => {
@@ -23,14 +23,14 @@ export const Skills = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-950/40 border border-indigo-800/40 text-indigo-400 text-xs font-semibold tracking-wide uppercase mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-800/40 text-cyan-400 text-xs font-semibold tracking-wide uppercase mb-3">
             Habilidades Técnicas
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Stack Tecnológico & Competencias
+            Stack Tecnológico & Competencias Backend
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Herramientas, frameworks y metodologías que utilizo para transformar requerimientos de negocio en software de producción.
+            Herramientas, frameworks y metodologías que utilizo para construir arquitecturas escalables, seguras y de alto desempeño.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export const Skills = () => {
         {/* Categories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {displayedCategories.map((category, idx) => {
-            const Icon = iconMap[category.icon] || Layout;
+            const Icon = iconMap[category.icon] || Server;
             return (
               <div
                 key={idx}

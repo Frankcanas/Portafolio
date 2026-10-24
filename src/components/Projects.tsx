@@ -8,7 +8,7 @@ export const Projects = () => {
   const [filter, setFilter] = useState<string>('Todos');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const categories = ['Todos', 'Full Stack & Frontend', 'IA & NLP', 'Backend & APIs'];
+  const categories = ['Todos', 'Backend & APIs', 'IA & NLP', 'Full Stack & Web'];
 
   const filteredProjects =
     filter === 'Todos'
@@ -23,13 +23,13 @@ export const Projects = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-800/40 text-emerald-400 text-xs font-semibold tracking-wide uppercase mb-3">
-              Portafolio de Trabajo
+              Portafolio Técnico
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Proyectos Destacados
+              APIs & Proyectos Backend Destacados
             </h2>
             <p className="mt-3 text-slate-400 text-base sm:text-lg">
-              Soluciones construidas con enfoque en arquitectura limpia, rendimiento y tecnologías de vanguardia.
+              Servidores, arquitecturas con NestJS y Express, persistencia relacional en PostgreSQL y soluciones con Inteligencia Artificial.
             </p>
           </div>
 
