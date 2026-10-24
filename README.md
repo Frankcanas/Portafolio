@@ -1,6 +1,6 @@
 # Portafolio Profesional — Frank Cañas 🚀
 
-> **Frontend Lead & Full Stack Developer | Soluciones Web Modernas, Arquitectura Limpia e Inteligencia Artificial.**
+> **Backend Developer & Software Engineer | NestJS, Node.js, Express, TypeScript, PostgreSQL, AWS & RAG Local.**
 
 Este proyecto es una SPA (Single Page Application) moderna, reactiva y de alto rendimiento diseñada para presentar los proyectos más destacados, stack tecnológico, trayectoria profesional y canales de contacto de **Frank Cañas**.
 
